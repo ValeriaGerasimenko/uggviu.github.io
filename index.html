@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Анкета</title>
+</head>
+<body>
+<h1>Анкета</h1>
+<form method="post" action="mailto:krishtopa.tania@gmail.com">
+<h3>Прізвище, ім'я *</h3>
+<input type="text"  name="name" value="" placeholder="Вкажи прізвище, ім'я"  />
+<h3>Стать *</h3>
+Жінка    <input type = "radio" name = "sex" value ="female"/>
+Чоловік <input type = "radio" name = "sex" value ="male" checked/> 
+<h3>Клас</h3>
+<select  name="klass">
+<option>10-А</option>
+<option>10-Б</option>
+</select>  
+<h3>Вік</h3>
+<select  name="vozrast">
+<option>15</option>
+<option>16</option>
+<option>Інший</option>
+</select>        
+<p>Дата проходження: <input type="date" id="prohoj" name="prohoj" value="гггг-мм-дд" min="2000-01-01" max="2030-12-31"></p>
+<h3>Який профіль вас цікавить?*</h3>
+<input type = "checkbox" name = "profil" />"Гуманітарний"<br>
+<input type = "checkbox" name = "profil" />"Хіміко-біологічний"<br> 
+<input type = "checkbox" name = "profil" />"Математичний"<br>  
+<input type = "checkbox" name = "profil" />"Інформаційно-технологічний"<br>  
+<h3>Eлектронна пошта*</h3>
+<input type="email"  name="email"  placeholder="nadiya@ukr.net"/>
+<h3> Телефон</h3>
+<input type="tel"  name="telephone" placeholder="+38(000)-000-0000"/><br>
+<p>Оцінка власного ставлення до навчання 0<input type="range" min="0" max="12" step="1" value="6">12</p>
+<h3>Ваші пропозиції щодо організації дозвілля школярів*</h3>
+<textarea name="comment" cols="60" rows="10" placeholder="У повідомленні має бути більше, ніж 20 символів">   
+</textarea><br>
+<p>* Поля, обов'язкові для заповнення <input type="reset" value="Очистити"  id="my_button" />
+<input type="submit" value="Надіслати" id="my_button" /></p>  
+</form> 
+</body>
+</html>
